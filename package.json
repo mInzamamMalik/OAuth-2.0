@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently --kill-others \"tsc -w\" \"nodemon dist/app.js\""
+    "start": "concurrently --kill-others \"tsc -w\" \"nodemon dist/app.js\"",
+    "start_help": "https://stackoverflow.com/questions/38276862/is-there-a-way-to-use-npm-scripts-to-run-tsc-watch-nodemon-watch"
   },
   "repository": {
     "type": "git",
