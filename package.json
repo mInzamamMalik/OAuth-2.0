@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc --watch & nodemon app.js"
+    "start": "concurrently --kill-others \"tsc -w\" \"nodemon dist/app.js\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "concurrently": "^4.0.0",
     "express": "^4.16.3",
     "mongoose": "^5.2.9",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "oauth2-server": "^3.0.0"
   }
 }
